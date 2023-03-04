@@ -1,0 +1,28 @@
+﻿@model DualTech.Models.ActualizacionClienteVista
+@{
+    ViewData["Title"] = "Editando Cliente";
+}
+
+<h1>Edit Client</h1>
+
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="ClienteId" readonly>
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nombre</label>
+        <input type="text" class="form-control" asp-for="Nombre">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Identidad</label>
+        <input type="text" class="form-control" asp-for="Identidad">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="submit" class="btn btn-danger" asp-action="Eliminar" asp-controller="Cliente">Delete</button>
+</form>

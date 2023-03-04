@@ -1,0 +1,30 @@
+﻿@model DualTech.Models.Entidades.Producto
+@{
+}
+<h1>Agregar Productos</h1>
+
+<form method="post" action="CrearP" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Nombre del Producto</label>
+        <input type="text" class="form-control" asp-for="Nombre">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Descripcion</label>
+        <input type="text" class="form-control" asp-for="Descripcion">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Precio</label>
+        <input type="number" class="form-control" asp-for="Precio">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Existencia</label>
+        <input type="number" class="form-control" asp-for="Existencia">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

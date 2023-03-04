@@ -1,0 +1,29 @@
+﻿@model List<DualTech.Models.Entidades.Cliente>
+
+@{
+}
+
+<h1>Clientes</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Identidad</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model)
+        {
+            <tr>
+                <td>@cliente.ClienteId</td>
+                <td>@cliente.Nombre</td>
+                <td>@cliente.Identidad</td>
+                <td><a href="Cliente/View/@cliente.ClienteId">Ver</a></td>
+            </tr>
+        }
+    </tbody>
+
+</table>

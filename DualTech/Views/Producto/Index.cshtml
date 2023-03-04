@@ -1,0 +1,33 @@
+﻿@model List<DualTech.Models.Entidades.Producto>
+
+@{
+}
+
+<h1>Productos</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Existencia</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producto in Model)
+        {
+            <tr>
+                <td>@producto.ProductoId</td>
+                <td>@producto.Nombre</td>
+                <td>@producto.Descripcion</td>
+                <td>@producto.Precio</td>
+                <td>@producto.Existencia</td>
+                <td><a href="Producto/View/@producto.ProductoId">Ver</a></td>
+            </tr>
+        }
+    </tbody>
+
+</table>

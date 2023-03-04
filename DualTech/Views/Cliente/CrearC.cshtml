@@ -1,0 +1,18 @@
+﻿@model DualTech.Models.Entidades.Cliente
+@{
+}
+<h1>Añadir Clientes</h1>
+
+<form method="post" action="CrearC" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Nombre</label>
+        <input type="text" class="form-control" asp-for="Nombre">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Identidad</label>
+        <input type="text" class="form-control" asp-for="Identidad">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

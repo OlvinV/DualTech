@@ -1,0 +1,38 @@
+﻿@model DualTech.Models.ActualizacionProductoVista
+@{
+    ViewData["Title"] = "Editando Producto";
+}
+
+<h1>Edit Product</h1>
+
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="ProductoId" readonly>
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nombre del Producto</label>
+        <input type="text" class="form-control" asp-for="Nombre">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Descripcion</label>
+        <input type="text" class="form-control" asp-for="Descripcion">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Precio</label>
+        <input type="number" class="form-control" asp-for="Precio">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Existencia</label>
+        <input type="number" class="form-control" asp-for="Existencia">
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="submit" class="btn btn-danger" asp-action="Eliminar" asp-controller="Producto">Delete</button>
+</form>
